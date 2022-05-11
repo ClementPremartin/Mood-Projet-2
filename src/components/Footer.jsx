@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import logoFacebook from "../assets/facebook.svg";
 import logoInsta from "../assets/instagram.svg";
 import logoTwitter from "../assets/twitter.svg";
@@ -21,7 +22,9 @@ function Footer() {
         </div>
         <div className="global-links">
           <div className="links">
-            <p className="footer-paragraph">Mentions légales</p>
+            <Link to="/*">
+              <p className="footer-paragraph">Mentions légales</p>
+            </Link>
           </div>
           <div className="links">
             <p className="footer-paragraph">Politique de confidentialité</p>
