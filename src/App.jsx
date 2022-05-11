@@ -7,7 +7,6 @@ import ResultatFilm from "./pages/ResultatFilm";
 import Footer from "./components/Footer";
 import PopupRetourAccueil from "./pages/PopupRetourAccueil";
 import Welcome from "./pages/Welcome";
-import Page404 from "./pages/Page404";
 import { ContextProvider } from "./contexts/Context";
 import "./App.css";
 
@@ -24,7 +23,6 @@ function App() {
             <Route path="/resultat/pizza" element={<ResultatPizza />} />
             <Route path="/popup/home" element={<PopupRetourAccueil />} />
             <Route path="/return" element={<PopupRetourAccueil />} />
-            <Route path="*" element={<Page404 />} />
           </Routes>
         </Router>
       </ContextProvider>
